@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate tên của lớp học</title>
+</head>
+<body>
+<script>
+    str = prompt("Nhập vào tên của lớp học: " + "Vd: C0001H, A0001K, H0001M");
+    function validate(str) {
+        reg = /^[CAP]+[0-9]{4}[GHIKLM]+$/;
+        if(reg.test(str)){
+            alert("Class hợp lệ");
+        }else{
+            alert("Class không hợp lệ");
+        }
+    }
+    validate(str);
+</script>
+</body>
+</html>
